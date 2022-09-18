@@ -2,7 +2,7 @@ package code4673;
 
 public class Main {
 	
-	public static int d(int n) {
+	public static int getSum(int n) {
 		int sum = n;
 
 		while(n != 0) {
@@ -18,7 +18,7 @@ public class Main {
 		int number = 0;
 		
 		for (int i = 0; i < 10000; i++) {
-			number = d(i+1);
+			number = getSum(i+1);
 			
 			if(number < 10000) {
 				check[number] = true;
